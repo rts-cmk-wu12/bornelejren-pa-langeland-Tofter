@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
-import '../styles/navigation.scss';
+import Logo from "../assets/Logo/logo.svg";
+import Topkids from "../assets/Logo/topkids.jpg";
+import '../styles/scss/navigation.scss';
 
 function Navigation() {
     return (
@@ -8,15 +10,18 @@ function Navigation() {
             <nav className="navigation">
                 <div className="navigation__container">
                     <ul className="navigation__list">
-                        <div className="navigation__logo">
-                          <img src="/src/assets/Logo/logo.png" alt="" />
-                          <h1>børnelejren på langeland</h1>  
-                        </div>
+                        <li className="navigation__logo">
+                          <img src={Logo} alt="" />
+                          <h1>børnelejren på langeland</h1>
+                        </li>
                         <li className="navigation__item">
                             <NavLink
                                 to='/'
                                 className="navigation__link"
-                                style={({ isActive }) => ({ color: isActive ? '#5754a8' : 'red' })}
+                                style={({ isActive }) => ({ color: isActive ? 'lightgray' : '#ffffff',
+                                    borderBottom: isActive ? '2px solid lightgray' : 'none'
+                                 })}
+                                
                             >
                                 Forside
                             </NavLink>
@@ -25,7 +30,8 @@ function Navigation() {
                             <NavLink
                                 to='/om-os'
                                 className="navigation__link"
-                                style={({ isActive }) => ({ color: isActive ? '#5754a8' : 'red' })}
+                                style={({ isActive }) => ({ color: isActive ? 'lightgray' : '#ffffff',
+                                    borderBottom: isActive ? '2px solid lightgray' : 'none' })}
                             >
                                 Om os
                             </NavLink>
@@ -34,7 +40,8 @@ function Navigation() {
                             <NavLink
                                 to='/tilmeld-sponsor'
                                 className="navigation__link"
-                                style={({ isActive }) => ({ color: isActive ? '#5754a8' : 'red' })}
+                                style={({ isActive }) => ({ color: isActive ? 'lightgray' : '#ffffff',
+                                    borderBottom: isActive ? '2px solid lightgray' : 'none' })}
                             >
                                 Tilmeld som sponsor
                             </NavLink>
@@ -43,14 +50,15 @@ function Navigation() {
                             <NavLink
                                 to='/tak'
                                 className="navigation__link"
-                                style={({ isActive }) => ({ color: isActive ? '#5754a8' : 'red' })}
+                                style={({ isActive }) => ({ color: isActive ? 'lightgray' : '#ffffff',
+                                    borderBottom: isActive ? '2px solid lightgray' : 'none' })}
                             >
                                 Børnelejren takker
                             </NavLink>
                         </li>
                     </ul>
                     <div className="underLogo">
-                        <img src="/src/assets/Logo/topkids.jpg" alt="" />
+                        <img src={Topkids} alt="" />
                     </div>
                     
                 </div>

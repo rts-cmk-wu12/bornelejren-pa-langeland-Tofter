@@ -5,9 +5,11 @@ import IndexTekst from "../components/index-tekst";
 function Index () {
     return ( 
         <>
+        <main>
         <FrontPage/>
         <IndexTekst/>
         <Footer/>
+        </main>
         </>
      );
 }

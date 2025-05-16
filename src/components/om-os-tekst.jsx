@@ -1,7 +1,12 @@
+import '../styles/scss/om-os-tekst.scss';
+import Gallery from './gallery';
+
 function OmOsTekst() {
     return (
         <>
-            <div>
+        <div className='omOs'>
+            <div className="omOs__tekst">
+                <h2 className='omOsTekst__heading'>Om os</h2>
                 <p>Børnelejren på Langeland er en velgørende, non-profit forening, som afholder
                     finansierede lejre for dårligt stillede børn og unge fra hele landet. Børnelejrene bliver
                     afholdt på foreningens bondegård, Søgård Hovedgård, som ligger i naturskønne
@@ -19,6 +24,10 @@ function OmOsTekst() {
                     henvendelser bedes ligeledes rettet til sekretariatet på telefon 38711260. Foreningens
                     formand er dagligt at træffe i sekretariatet. </p>
             </div>
+            <div className='omOs__gallery'>
+                <Gallery/>
+            </div>
+        </div>
         </>
     );
 }

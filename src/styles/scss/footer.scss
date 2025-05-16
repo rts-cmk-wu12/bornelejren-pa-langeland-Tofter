@@ -1,0 +1,23 @@
+.footerContainer{
+    width: 100%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+
+    :first-child{
+        justify-content: start;
+    }
+
+    img{
+       max-width: 120px;
+    }
+
+    &__tekst{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}

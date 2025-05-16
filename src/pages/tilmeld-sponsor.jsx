@@ -8,7 +8,6 @@ function TildmeldSponsor() {
         <>
             <Navigation />
             <TilmeldTekst/>
-            <Form/>
             <Footer/>
         </>
     );

@@ -1,11 +1,9 @@
-import Gallery from "./gallery";
 import Navigation from "./navigation";
-import '../styles/frontPage.scss';
+import '../styles/scss/frontPage.scss';
 
 function FrontPage() {
     return ( 
         <>
-        <Gallery/>
         <Navigation/>
         </>
      );

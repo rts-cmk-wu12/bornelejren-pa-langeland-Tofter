@@ -1,0 +1,1 @@
+/* mongodb+srv://tofter:tHKAYUrNhN14ZB7I@sponsor-db.xsjmlmo.mongodb.net/?retryWrites=true&w=majority&appName=sponsor-db */
