@@ -1,5 +1,6 @@
 .omOs {
     display: flex;
+    margin-bottom: 1rem;
 
     @media screen and (max-width: 1530px) {
         flex-wrap: wrap;
@@ -25,10 +26,6 @@
             margin: 0 auto;
             
         }
-
-
-
-        p {}
     }
 
     &__gallery {

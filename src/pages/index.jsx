@@ -8,8 +8,8 @@ function Index () {
         <main>
         <FrontPage/>
         <IndexTekst/>
-        <Footer/>
         </main>
+        <Footer/>
         </>
      );
 }
