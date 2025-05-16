@@ -1,0 +1,44 @@
+.footerContainer {
+    width: 100%;
+    padding: 1rem; 
+    background-color: #d0000b; 
+    color: #fff; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 1.5rem;
+    
+    
+
+    @media (min-width: 768px) {
+        flex-direction: row; 
+        justify-content: space-between; 
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem; 
+        gap: 1rem;
+    }
+
+    img {
+        max-width: 120px;
+        height: auto; 
+    }
+
+    &__tekst {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+
+        @media (min-width: 768px) {
+            text-align: left; 
+        }
+    }
+}

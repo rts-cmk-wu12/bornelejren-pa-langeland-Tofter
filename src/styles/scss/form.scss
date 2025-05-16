@@ -1,0 +1,56 @@
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 5rem;
+
+    @media screen and (max-width: 550px) {
+        margin: 2rem 1rem;
+    }
+    
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: #d0000b;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+
+        label {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        input, select {
+            text-align: center;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            padding: 0.3rem ;
+            width: 100%;
+            height: 2.5rem;
+            box-sizing: border-box;
+        }
+
+        select {
+            
+        }
+    }
+
+    &__button{
+        
+    }
+}
