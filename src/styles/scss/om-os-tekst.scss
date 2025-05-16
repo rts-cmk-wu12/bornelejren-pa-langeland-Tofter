@@ -1,0 +1,35 @@
+.omOs {
+    display: flex;
+    margin-bottom: 1rem;
+
+    @media screen and (max-width: 1530px) {
+        flex-wrap: wrap;
+        
+    }
+    
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    &__tekst {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem;
+        max-width: 650px;
+        gap: 1rem;
+
+        @media screen and (max-width: 1530px) {
+            text-align: center;
+            margin: 0 auto;
+            
+        }
+    }
+
+    &__gallery {
+
+        margin-top: 2rem;
+    }
+}
